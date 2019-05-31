@@ -1,48 +1,48 @@
 ---
 downloads: ~/.ansible-downloads/
 
-configure_dotfiles: yes
-configure_sudoers: yes
-configure_terminal: yes
-configure_osx: yes
+configure_dotfiles: false
+configure_sudoers: false
+configure_terminal: false
+configure_osx: false
 
-dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
-dotfiles_repo_accept_hostkey: yes
-dotfiles_repo_local_destination: ~/Dropbox/Development/GitHub/dotfiles
-dotfiles_files:
-  - .bash_profile
-  - .gitignore
-  - .inputrc
-  - .osx
-  - .vimrc
+#dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
+#dotfiles_repo_accept_hostkey: yes
+#dotfiles_repo_local_destination: ~/Dropbox/Development/GitHub/dotfiles
+#dotfiles_files:
+#  - .bash_profile
+#  - .gitignore
+#  - .inputrc
+#  - .osx
+#  - .vimrc
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
-  - autoconf
   - bash-completion
-  - doxygen
-  - gettext
-  - gifsicle
   - git
   - go
   - gpg
   - hub
   - httpie
   - iperf
-  - libevent
-  - sqlite
-  - mcrypt
   - nmap
-  - node
-  - nvm
-  - php
   - ssh-copy-id
-  - cowsay
-  - readline
   - openssl
-  - pv
   - wget
-  - wrk
+#  - autoconf
+#  - doxygen
+#  - gettext
+#  - gifsicle
+#  - libevent
+#  - sqlite
+#  - mcrypt
+#  - node
+#  - nvm
+#  - php
+#  - cowsay
+#  - readline
+#  - pv
+#  - wrk
 
 homebrew_taps:
   - homebrew/core
@@ -55,42 +55,49 @@ homebrew_cask_apps:
   - dropbox
   - firefox
   - google-chrome
-  - handbrake
-  - licecap
-  - macvim
-  - sequel-pro
-  - skitch
   - slack
-  - sublime-text
-  - transmit
   - vagrant
+#  - handbrake
+#  - licecap
+#  - macvim
+#  - sequel-pro
+#  - skitch
+#  - sublime-text
+#  - transmit
 
-# See `geerlingguy.mas` role documentation for usage instructions.
-mas_installed_apps: []
-mas_email: ""
-mas_password: ""
+## See `geerlingguy.mas` role documentation for usage instructions.
+#mas_installed_apps: []
+#mas_email: ""
+#mas_password: ""
 
-osx_script: "~/.osx --no-restart"
+#osx_script: "~/.osx --no-restart"
 
-# Install packages from other package managers.
-# Note: You are responsible for making sure the required package managers are
-# installed, eg. through homebrew.
-composer_packages: []
-  # - name: drush
-  #   state: present # present/absent, default: present
-  #   version: "^8.1" # default: N/A
-gem_packages: []
-  # - name: bundler
-  #   state: present # present/absent/latest, default: present
-  #   version: "~> 1.15.1" # default: N/A
-npm_packages: []
-  # - name: webpack
-  #   state: present # present/absent/latest, default: present
-  #   version: "^2.6" # default: N/A
-pip_packages: []
-  # - name: mkdocs
-  #   state: present # present/absent/latest, default: present
-  #   version: "0.16.3" # default: N/A
+## Install packages from other package managers.
+## Note: You are responsible for making sure the required package managers are
+## installed, eg. through homebrew.
+#composer_packages: []
+#  # - name: drush
+#  #   state: present # present/absent, default: present
+#  #   version: "^8.1" # default: N/A
+#gem_packages: []
+#  # - name: bundler
+#  #   state: present # present/absent/latest, default: present
+#  #   version: "~> 1.15.1" # default: N/A
+#npm_packages: []
+#  # - name: webpack
+#  #   state: present # present/absent/latest, default: present
+#  #   version: "^2.6" # default: N/A
+#pip_packages: []
+#  # - name: mkdocs
+#  #   state: present # present/absent/latest, default: present
+#  #   version: "0.16.3" # default: N/A
 
-# Glob pattern to ansible task files to run after all other tasks are finished.
-post_provision_tasks: []
+## Glob pattern to ansible task files to run after all other tasks are finished.
+#post_provision_tasks: []
+#
+#
+#
+#
+#
+## STILL TO INSTALL:
+#keybase, spotify, pomodoro app, tmux, prob some other cli tools?
